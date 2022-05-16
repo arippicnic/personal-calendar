@@ -1,0 +1,72 @@
+@import "variables.module";
+
+.navigation {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-primary);
+    margin-bottom: 2em;    
+    &_title{
+        margin-left: 1em;
+        margin-top: 0.5em;
+        color: $color-grey-light-1;
+    }
+}
+
+.calendar_grid {
+    width: 100%;
+    max-height: max-content;
+    background-color: $color-grey-light-2;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: $grid-gap;
+    grid-row-gap: $grid-gap;
+}
+
+.week_cell {
+    color: $color-secondary-primary;
+    padding: $space-md 0;
+    display: flex;
+    justify-content: center;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.day_cell {
+    height: $grid-height;
+    position: relative;
+    border: $grid-gap solid $color-grey-light-2;
+    background-color: $color-grey-light-2;
+    &_item{
+        position: relative;
+        background-color: $color-grey-light-1;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        color: $color-grey-light-2;
+        padding: $space-md;
+    }
+    &_current{
+        color: $color-secondary-primary;
+    }
+    &_number{
+        align-self: flex-end;
+    }
+    &_label{
+        position: absolute;
+        margin-top: 2.1em;
+        padding-right: 1.5em;
+        width: 100%;
+        &_text{
+            overflow:hidden; 
+            white-space: nowrap;
+            cursor: pointer;
+            color: $color-secondary;
+            padding: 0.3em 0.5em;
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+    }
+  }

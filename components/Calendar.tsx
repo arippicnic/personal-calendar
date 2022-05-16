@@ -46,7 +46,7 @@ const Calandar: React.FC<{ mountYear: MountYearType }> = ({ mountYear }) => {
 
       e.stopPropagation();
     },
-    [loading]
+    [loading, events]
   );
 
   const handleShowDetailEvent = useCallback(

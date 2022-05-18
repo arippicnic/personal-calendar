@@ -35,7 +35,7 @@ const Calandar: React.FC<{ mountYear: MountYearType }> = ({ mountYear }) => {
         return false;
       }
 
-      if (fileterEvents.length >= 50) {
+      if (events.length >= 50) {
         alert("Only 50 events added");
         return false;
       }

@@ -8,7 +8,7 @@ $color-grey-light-1: #f9f7f6;
 $color-grey-light-2: rgb(210, 206, 206);
 
 // FONT VARIABLES
-$font-primary: 'Nunito', sans-serif;
+$font-primary: "Nunito", sans-serif;
 
 // SPACE BREAKPOINTS
 $grid-gap: 0.2em;
@@ -18,6 +18,5 @@ $space-md: 8px;
 $space-lg: 16px;
 
 :export {
-  primaryColor:$font-primary;
+  primaryColor: $font-primary;
 }
-
